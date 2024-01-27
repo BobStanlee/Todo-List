@@ -1,0 +1,83 @@
+$primaryColor: #212529;
+$secondaryColor: #343a40;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: $primaryColor;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .todo-list-container {
+        height: 100%;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 500px;
+    }
+
+    .profile-img {
+        width: 40px;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .profile-Container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .details-container {
+            display: grid;
+        }
+    }
+
+    .search-box-container {
+        background-color: $primaryColor;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid white;
+
+        input {
+            height: 40px;
+            background: $primaryColor;
+            outline: none;
+            width: 100%;
+            border: none;
+            padding-left: 5px;
+            color: white;
+        }
+
+        input::-webkit-input-placeholder {
+            color: white;
+        }
+    }
+
+    
+
+
+    
+}
