@@ -13,6 +13,14 @@ body {
     color: white;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
     body {
         padding: 20px;
@@ -23,6 +31,7 @@ body {
     }
 
     .menu-container {
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -76,8 +85,45 @@ body {
         }
     }
 
-    
+    .categories {
+        display: grid;
+        row-gap: 20px;
 
+        .categories-item {
+            position: relative;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            transition: all 0.3s ease-in-out 0s;
+            padding: 10px 10px;
+            border-radius: 5px;
 
-    
+            &:hover,
+            &.active {
+                background: $secondaryColor;
+            }
+
+            &.active::before {
+                content: ' ';
+                position: absolute;
+                left: 0;
+                display: block;
+                background: orangered; /* or any other color value */
+                width: 3px;
+                height: 10px;
+            }
+        }
+    }
+
+    .addList-btn {
+        display: flex;
+        gap: 20px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: $primaryColor;
+        padding: 10px 0 20px 30px;
+        align-items: center;
+        cursor: pointer;
+    }
 }
