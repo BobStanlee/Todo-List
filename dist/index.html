@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="todo-list-container">
-        <nav>
+        <nav class="navigation vanish">
             <div class="menu-btn vanish">
                 <span class="material-symbols-outlined" id="menu-btn">
                     menu
@@ -88,7 +88,35 @@
         </nav>
 
         <div class="task-content">
-            Hello
+            <div class="category-page">
+                <button class="back-btn">
+                    <span class="material-symbols-outlined">
+                        arrow_back
+                    </span>
+                    <span>My Day</span>
+                </button>
+
+                <h2>My Day</h2>
+                <p id="today-date">Monday, 29 January</p>
+
+                <div class="myday-task">
+                    <div class="task-item">
+                        <input type="checkbox" name="status" id="status">
+
+                        <div class="task-item-content">
+                           <h3 class="task-item-title">30 minutes of research</h3>
+                           <span>
+                            <p>Task</p>
+                            <span> . </span>
+                            <span class="material-symbols-outlined">
+                                calendar_today
+                            </span>
+                            <span class="due">Today</span>
+                           </span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
